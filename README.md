@@ -28,31 +28,32 @@ class MyApp extends StatelessWidget {
 class Demo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-      return MaterialApp(
-        home: Scaffold(
-          body: Center(
-            child: Container(
-                height: 200,
-                width: 200,
-                child: LoadingElevatedButton(
-                  isLoading: true,
-                  disabledWhileLoading: true,
-                  onPressed: () {
-                    print("Button clicked")
-                  },
-                  child: Text('Hello'),
-                )),
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            height: 200,
+            width: 200,
+            child: LoadingElevatedButton(
+              isLoading: true,
+              disabledWhileLoading: true,
+              onPressed: () {
+                print("Button clicked");
+              },
+              child: Text('Hello'),
+            ),
           ),
         ),
-      );
-    }
+      ),
+    );
+  }
 }
 ```
 
 ## Button attributes
 
 ```dart
-LoadingElevatedButton(
+LoadingElevatedButton({
     Key key,
     @required VoidCallback onPressed,
     VoidCallback onLongPress,
@@ -64,7 +65,7 @@ LoadingElevatedButton(
     Widget loadingChild,
     bool isLoading = false,
     bool disabledWhileLoading = true,
-)
+})
 ```
 
 ## License
