@@ -6,7 +6,7 @@ Elevated button with a disabled while loading feature
 
 Simple Elevated button which has the option of being enabled/disabled while loading as well as adding any Widget when button has loading property
 
-![You can see Image inside images folder...](https://raw.githubusercontent.com/Eliathoran/loading_elevated_button/master/images/button_types.png?token=ACJJ55CX7TQGDR5ZPYTQBPLAFBK5S)
+![You can see Image inside images folder...](https://github.com/Eliathoran/loading_elevated_button/blob/master/images/button_types.png)
 
 ## Simple Example
 ```dart
