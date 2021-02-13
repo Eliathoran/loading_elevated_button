@@ -1,6 +1,6 @@
 name: loading_elevated_button
 description: Elevated button with a disabled while loading feature
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/Eliathoran/loading_elevated_button
 
 environment:
