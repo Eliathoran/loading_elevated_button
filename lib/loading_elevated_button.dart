@@ -2,9 +2,7 @@ library loading_elevated_button;
 
 import 'package:flutter/material.dart';
 
-
 class LoadingElevatedButton extends ElevatedButton {
-
   const LoadingElevatedButton({
     Key key,
     @required VoidCallback onPressed,
@@ -16,23 +14,23 @@ class LoadingElevatedButton extends ElevatedButton {
     @required Widget child,
     Widget loadingChild,
     bool isLoading = false,
-    disabledWhileLoading = true,
+    bool disabledWhileLoading = true,
   }) : super(
-    key: key,
-    onPressed: disabledWhileLoading 
-        ? isLoading
-        ? null 
-        : onPressed
-        : onPressed,
-    onLongPress: onLongPress,
-    style: style,
-    focusNode: focusNode,
-    autofocus: autoFocus,
-    clipBehavior: clipBehavior,
-    child: isLoading
-        ? loadingChild == null
-        ? const CircularProgressIndicator()
-        : loadingChild
-        : child,
-  );
+          key: key,
+          onPressed: disabledWhileLoading
+              ? isLoading
+                  ? null
+                  : onPressed
+              : onPressed,
+          onLongPress: onLongPress,
+          style: style,
+          focusNode: focusNode,
+          autofocus: autoFocus,
+          clipBehavior: clipBehavior,
+          child: isLoading
+              ? loadingChild == null
+                  ? const CircularProgressIndicator()
+                  : loadingChild
+              : child,
+        );
 }
