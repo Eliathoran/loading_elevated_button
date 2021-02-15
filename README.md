@@ -9,7 +9,7 @@ Simple Elevated button which has the option of being enabled/disabled while load
 Button can be enabled/disabled when loading and can have different Widget children depending on its state.
 
 <p align="center">
-  <img src="https://github.com/Eliathoran/loading_elevated_button/blob/master/images/button_types.png" alt="Example images"/>
+  <img src="https://media.giphy.com/media/OyDeKyCjeQAVR6v1kH/source.gif"/>
 </p>
 
 You can take a look into the simple example below or take a look into the example project inside the code which has other basic behaviours (previous image taken from that example).

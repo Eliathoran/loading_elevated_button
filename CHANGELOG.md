@@ -9,3 +9,7 @@
 ## [0.0.3] - 13/February/2021
 
 * Added Example project
+
+## [0.0.4] - 15/February/2021
+
+* ReadMe image update (agaim...)
