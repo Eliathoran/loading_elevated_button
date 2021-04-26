@@ -12,4 +12,8 @@
 
 ## [0.0.4] - 15/February/2021
 
-* ReadMe image update (agaim...)
+* ReadMe image update (again...)
+
+## [0.0.5] - 26/April/2021
+
+* Package upgrade

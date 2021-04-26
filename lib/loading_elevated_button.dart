@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 /// {@category Button}
 ///
-/// LoadingElevatedButton is an ElevatedButton (for more info look into it) with the option of changing when its set to [isLoading].
+/// LoadingElevatedButton is an ElevatedButton with a loading option for changing when its set to [isLoading].
 ///
 /// By default (without any different parameters as an ElevatedButton) this button works exactly in the same way as an ElevatedButton.
 /// Using LoadingElevatedButton without [isLoading] will make the button have same behaviour as ElevatedButton
