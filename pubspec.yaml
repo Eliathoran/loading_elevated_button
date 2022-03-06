@@ -1,6 +1,6 @@
 name: loading_elevated_button
 description: An ElevatedButton with an "isLoading" option to change Child Widget and/or disable the button when isLoading is enabled.
-version: 1.0.0+1
+version: 1.0.0+2
 repository: https://github.com/Eliathoran/loading_elevated_button
 
 environment:

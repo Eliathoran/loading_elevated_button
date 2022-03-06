@@ -63,14 +63,14 @@ class Demo extends StatelessWidget {
 ```dart
 LoadingElevatedButton({
     Key key,
-    @required VoidCallback onPressed,
-    VoidCallback onLongPress,
-    ButtonStyle style,
-    FocusNode focusNode,
+    VoidCallback? onPressed,
+    VoidCallback? onLongPress,
+    ButtonStyle? style,
+    FocusNode? focusNode,
     bool autoFocus = false,
     Clip clipBehavior = Clip.none,
-    @required Widget child,
-    Widget loadingChild,
+    required Widget child,
+    Widget? loadingChild,
     bool isLoading = false,
     bool disabledWhileLoading = true,
 });
