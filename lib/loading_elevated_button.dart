@@ -16,15 +16,15 @@ import 'package:flutter/material.dart';
 class LoadingElevatedButton extends ElevatedButton {
   /// Creates an LoadingElevatedButton.
   const LoadingElevatedButton({
-    Key key,
-    @required VoidCallback onPressed,
-    VoidCallback onLongPress,
-    ButtonStyle style,
-    FocusNode focusNode,
+    Key? key,
+    VoidCallback? onPressed,
+    VoidCallback? onLongPress,
+    ButtonStyle? style,
+    FocusNode? focusNode,
     bool autoFocus = false,
     Clip clipBehavior = Clip.none,
-    @required Widget child,
-    Widget loadingChild,
+    required Widget child,
+    Widget? loadingChild,
     bool isLoading = false,
     bool disabledWhileLoading = true,
   }) : super(

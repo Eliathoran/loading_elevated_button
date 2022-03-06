@@ -3,8 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:loading_elevated_button/loading_elevated_button.dart';
 
 void main() {
-  Widget progressBar;
-  VoidCallback onPressed;
+  late Widget progressBar;
+  late VoidCallback onPressed;
 
   setUp(() {
     progressBar = CircularProgressIndicator();
@@ -63,10 +63,10 @@ void main() {
 class MyWidget extends StatelessWidget {
   final bool isLoading;
   final bool disabledWhileLoading;
-  final Widget progressBar;
-  final VoidCallback onPressed;
+  final Widget? progressBar;
+  final VoidCallback? onPressed;
 
-  const MyWidget({Key key, this.onPressed, this.progressBar, this.isLoading = false, this.disabledWhileLoading = true})
+  const MyWidget({Key? key, this.onPressed, this.progressBar, this.isLoading = false, this.disabledWhileLoading = true})
       : super(key: key);
 
   @override

@@ -1,6 +1,6 @@
 # example
 
-A new Flutter project.
+LoadingElevatedButton example
 
 ## Getting Started
 
