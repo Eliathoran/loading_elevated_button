@@ -4,16 +4,14 @@ import 'package:loading_elevated_button/loading_elevated_button.dart';
 
 void main() {
   late Widget progressBar;
-  late VoidCallback onPressed;
 
   setUp(() {
-    progressBar = CircularProgressIndicator();
-    onPressed = () {};
+    progressBar = const CircularProgressIndicator();
   });
 
   testWidgets('LoadingElevatedButton when !isLoading with a given widget then no given widget is found',
       (WidgetTester tester) async {
-    await tester.pumpWidget(MyWidget());
+    await tester.pumpWidget(const MyWidget());
 
     final loadingWidget = find.byWidget(progressBar);
     expect(loadingWidget, findsNothing);
@@ -74,15 +72,15 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Container(
+          child: SizedBox(
               height: 200,
               width: 200,
               child: LoadingElevatedButton(
-                isLoading: this.isLoading,
-                disabledWhileLoading: this.disabledWhileLoading,
+                isLoading: isLoading,
+                disabledWhileLoading: disabledWhileLoading,
                 onPressed: onPressed,
-                child: Text('Hello'),
-                loadingChild: this.progressBar,
+                child: const Text('Hello'),
+                loadingChild: progressBar,
               )),
         ),
       ),

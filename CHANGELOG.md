@@ -18,6 +18,6 @@
 
 * Package upgrade
 
-## [1.0.0] - 26/April/2021
+## [1.0.0+1] - 6/March/2022
 
-* Package upgrade
+* Full null safety migration

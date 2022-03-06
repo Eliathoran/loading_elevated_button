@@ -39,10 +39,6 @@ class LoadingElevatedButton extends ElevatedButton {
           focusNode: focusNode,
           autofocus: autoFocus,
           clipBehavior: clipBehavior,
-          child: isLoading
-              ? loadingChild == null
-                  ? const CircularProgressIndicator()
-                  : loadingChild
-              : child,
+          child: isLoading ? loadingChild ?? const CircularProgressIndicator() : child,
         );
 }
