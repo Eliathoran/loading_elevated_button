@@ -17,3 +17,7 @@
 ## [0.0.5] - 26/April/2021
 
 * Package upgrade
+
+## [1.0.0] - 26/April/2021
+
+* Package upgrade

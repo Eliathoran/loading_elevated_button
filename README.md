@@ -73,7 +73,7 @@ LoadingElevatedButton({
     Widget loadingChild,
     bool isLoading = false,
     bool disabledWhileLoading = true,
-})
+});
 ```
 
 ## License
