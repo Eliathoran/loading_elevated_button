@@ -1,6 +1,7 @@
 ## [1.0.0+2] - 6/March/2022
 
 * README update
+* Code format
 
 ## [1.0.0+1] - 6/March/2022
 
