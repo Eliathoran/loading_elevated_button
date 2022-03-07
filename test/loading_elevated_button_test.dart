@@ -9,7 +9,8 @@ void main() {
     progressBar = const CircularProgressIndicator();
   });
 
-  testWidgets('LoadingElevatedButton when !isLoading with a given widget then no given widget is found',
+  testWidgets(
+      'LoadingElevatedButton when !isLoading with a given widget then no given widget is found',
       (WidgetTester tester) async {
     await tester.pumpWidget(const MyWidget());
 
@@ -17,7 +18,8 @@ void main() {
     expect(loadingWidget, findsNothing);
   });
 
-  testWidgets('LoadingElevatedButton when isLoading with a given widget then it is provided',
+  testWidgets(
+      'LoadingElevatedButton when isLoading with a given widget then it is provided',
       (WidgetTester tester) async {
     await tester.pumpWidget(MyWidget(
       progressBar: progressBar,
@@ -64,7 +66,12 @@ class MyWidget extends StatelessWidget {
   final Widget? progressBar;
   final VoidCallback? onPressed;
 
-  const MyWidget({Key? key, this.onPressed, this.progressBar, this.isLoading = false, this.disabledWhileLoading = true})
+  const MyWidget(
+      {Key? key,
+      this.onPressed,
+      this.progressBar,
+      this.isLoading = false,
+      this.disabledWhileLoading = true})
       : super(key: key);
 
   @override
